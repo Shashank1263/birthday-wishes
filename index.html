@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wish</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: elephant,;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        }
+
+        .card {
+            background: transparent;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            text-align: center;
+            padding: 20px;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .card h1 {
+            color: #ff6f61;
+            font-size: 2rem;
+        }
+
+        .card p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .card button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .card button:hover {
+            background-color: #e55b50;
+        }
+
+        .balloons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .balloons img {
+            position: absolute;
+            animation: float 5s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100%);
+            }
+            50% {
+                transform: translateY(50%);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="balloons">
+        <img src="yashu1.jpg" style="left: 1%; animation-delay: 0s;">
+        <img src="yashu2.jpg" style="left: 10%; animation-delay: 2s;">
+        <img src="yashu3.jpg"style="left: 20%; animation-delay: 4s;">
+        <img src="yashu4.jpg" style="left: 30%; animation-delay: 6s;">
+        <img src="yashu5.jpg" style="left: 40%; animation-delay: 8s;">
+    </div>
+    <div class="card">
+        <h1>Happy Birthday YASHU</h1>
+        <p>Wishing you a day filled with love, joy, and celebration!</p>
+        <button onclick="alert('Enjoy your special day! 🎉')">Celebrate</button>
+    </div>
+</body>
+</html>
